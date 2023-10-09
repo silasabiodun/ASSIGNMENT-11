@@ -1,0 +1,180 @@
+*{
+  box-sizing:border-box;
+}
+.row::after{
+  content:"";
+  clear:both;
+  display:table;
+}
+
+[class*="col-"]{
+  float:left;
+  padding:0px;
+}
+
+[class*="col-"]{
+  width:100%;
+}
+@media only screen and (min-width:768px){
+.col-1{
+  width:8.33%;
+}
+.col-2{
+  width:16.66%;
+}
+.col-3{
+  width:25%;
+}
+.col-4{
+  width:33.3%;
+}
+.col-5{
+  width:41.66%;
+}
+.col-6{
+  width:50%;
+}
+.col-7{
+  width:58.33%;
+}
+.col-8{
+  width:66.66%;
+}
+.col-9{
+  width:75%;
+}
+.col-10{
+  width:83.33%;
+}
+.col-11{
+  width:91.66%;
+}
+.col-12{
+  width:100%;
+}
+}
+
+*{
+  font-family: sans-serif;
+}
+#container0{
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  height: 100px;
+  background-color: blue;
+  color: black;
+}
+#container1{
+  position:relative;
+  top:auto;
+  display:flow-root;
+  background-color: #ffffff;
+  height: auto;
+  max-width: auto;
+  margin:auto;
+  margin-top: 130px;
+  margin-right: 2px;
+  padding:40px;
+  border:2px groove blue;
+  border-radius: 45px 25px;
+}
+
+
+
+h2{
+  background-color: blue;
+  color:white;
+}
+table{
+  table-layout: relative;
+  width:100%;
+  border-collapse:collapse;
+
+}
+th,td{
+  border:2px double blue;
+  padding:5px;
+  text-align:center;
+}
+th{
+  background-color: rgba(0,0,255,0.3);
+}
+.col-12{
+  position: fixed;
+}
+.col-12 ul{
+  list-style-type: none;
+  margin-top: 30px;
+margin-left: -20px;
+margin-right: 20px;
+}
+.col-12 li{
+  display:inline;
+  text-decoration:  none;
+  padding: 5px;
+  background-color: white;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.col-2{
+  position: relative;
+}
+.col-2 ul{
+  list-style-type: none;
+  margin-top: 2px;
+margin-left: -20px;
+margin-right: 20px;
+}
+.col-2 li{
+  display:block;
+  text-decoration:  none;
+  padding: 5px;
+  background-color: blue;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.col-2 a:link{
+  color:red;
+}
+.col-2 :visited{
+  color: black;
+}
+.col-2 a:hover{
+  background-color: white;
+}
+.col-2 a:active{
+  background-color:white;
+  color:blue;
+}
+.col-2{
+  border-radius: 25px 20px;
+}
+.col-10{
+  position: relative;
+  margin-top:-25px;
+margin-left: auto;
+margin-right: auto;
+}
+.col-10{
+  display:block;
+  text-decoration:  none;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.flex-container{
+  display:flex
+}
+.flex-container > *{
+  margin:-5px;
+  margin-left: 5px;
+  margin-right: 20px;
+  padding:5px;
+}
+html{
+background-size: contain;
+overflow:inherit;
+}

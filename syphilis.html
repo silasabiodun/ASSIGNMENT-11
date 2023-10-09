@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="keywords" content="HTML 5, CSS 3, JavaScript">
+<meta name="description" content="Dynamic Web Development">
+<meta name="author" content="Mildred">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CONGENITAL SYPHILIS</title>
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="../css/syphilis.css">
+</head>
+<header>
+  <div id="con1">
+  <nav class ="col-12">
+  <ul class="one">
+    <li><a href= "../pages/pindexpage.html">Home</a></li>
+    <li><a href= "#">Log out</a></li>
+  </ul>
+  </nav>
+  </div>
+</header>
+  <section class="flex-container">
+  <nav class ="col-3">
+  <ul class="two">
+        <li><a href= "../pages/personalinfo.html">Personal Information</a></li>
+        <li><a href= "../pages/risk factor.html">Risk Factors</a></li>
+        <li><a href= "../pages/hepb.html">Hepatitis B</a></li>
+        <li><a href= "../pages/syphilis.html">Congenital Syphilis</a></li>
+        <li><a href= "../pages/gonorrhea.html">Chlamydia & Gonorrhea</a></li>
+  </ul>
+  </nav>
+  <article class="col-9">
+
+  <div id="con2">
+  <div id="con3">
+</div>
+  <form class="congsyphillis" action="" method="POST" autocomplete="off">
+  <div>
+    <h3>Local Use Only</<h3></br></br>
+    <label for="mothersname">Mother's Name:</label>
+    <input id="mothersname" name="localuseonly" type ="text" placeholder="Mother's Name" required/>
+    <label for="chartno">Chart No:</label>
+    <input id="chartno" name="localuseonly" type ="text" placeholder="Chart No"/>
+    <label for="motherscaseid">Mother's Case ID No:</label>
+    <input id="motherscaseid" name="localuseonly" type ="text" placeholder="Mother's Case"/></br></br>
+    <label for="address">Address:</label>
+    <input id="address" name="localuseonly" type ="text" placeholder="Address" required/>
+    <label for="obgyn">OB/Gyn:</label>
+    <input id="obgyn" name="localuseonly" type ="text" placeholder="OB/Gyn" required/>
+    <label for="tel">Tel:</label>
+    <input id="tel" name="localuseonly" type ="tel" placeholder="1234-567-8901" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}"/></br></br>
+    <label for="infantname">Infant's Name:</label>
+    <input id="infantname" name="localuseonly" type ="text" placeholder="Infant's Name" required/>
+    <label for="chartno">Chart No:</label>
+    <input id="chartno" name="localuseonly" type ="text" placeholder="Chart No"/>
+    <label for="deliveringdoc">Delivering Physician:</label>
+    <input id="deliveringdoc" name="localuseonly" type ="text" placeholder="Delivering Physician" required/>
+    <label for="tel">Tel:</label>
+    <input id="tel" name="localuseonly" type ="tel" placeholder="1234-567-8901" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}"/></br></br>
+    <label for="pediatrician">Pediatrician:</label>
+    <input id="pediatrician" name="localuseonly" type ="text" placeholder="Pediatrician" required/>
+   <label for="tel">Tel:</label>
+    <input id="tel" name="localuseonly" type ="tel" placeholder="1234-567-8901" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}"/>
+    <label for="deliveringhos">Delivering Hospital:</label>
+    <input id="deliveringhos" name="localuseonly" type ="text" placeholder="Delivering Hospital" required/></br></br>
+      </div>
+      <h2>CONGENITAL SYPHILIS(CS) CASE INVESTIGATION AND REPORT</h2>
+    <table>
+      <tr>
+        <th>1. Report Date to health dept.</th>
+        <td><input type="text" name="reportdate"/></td>
+        <th>2. Reporting state name & FIPS code:</th>
+        <td><input type="text" name="reportingstatename"/></td>
+        <th>3. Reporting county name & FIPS code:</th>
+        <td><input type="text" name="reportingcountyname"/></td>
+      </tr>
+    </table>
+    <h3>PART I. MATERNAL INFORMATION</h3>
+    <table>
+      <tr>
+        <th>4. Mother's state & FIPS code:</th>
+        <td><input type="text" name="mothersstate"/></td>
+        <th>5. Mother's Country of residence(leave blank if USA):</th>
+        <td><input type="text" name="motherscountryresidence"/></td>
+        <th>6. Mother's residence county & FIPS code:</th></br></br>
+        <td><input type="text" name="motherscounty"/></td>
+      </tr>
+      <tr>
+        <th>7. Mother's residence Zip code:</th>
+        <td><input type="text" name="mothersresidencezip"/></td>
+        <th>8. Mother's Date of birth</th>
+        <td><input type="date" name="mothersdob"/></td>
+        <th>9. Mother's obstetrics History:</th></br></br>
+        <td><input type="text" name="mothersobshx"/></td>
+      </tr>
+      <tr>
+        <th>10. Last menstrual period(LMP)<i>(before delivery)</i>:</th>
+        <td><input type="text" name="lmp"/></td>
+        <th colspan="3">11. Indicate date of first prenatal visit and trimester of first prenatal visit</th>
+        <td><input type="date" name="dofpv"/></td>
+      </tr>
+    </table>
+    <label for"Ethnicity"><b>12. MOTHER'S ETHNICITY:</b></label><br/>
+    <input type="radio" value ="Hispanic" name="Ethnicity" id="Hispanic" required>
+    <label for"Hispanic">Hispanic</label>
+    <input type="radio" value ="Nonhispanic" name="Ethnicity" id="Nonhispanic" required>
+    <label for"Nonhispanic">Non-Hispanic</label>
+    <input type="radio" value ="unk" name="Ethnicity" id="unk" required>
+    <label for"unk">Unk</label></br></br>
+    <label for"race"><b>13. MOTHER'S RACE:</b></label><br/>
+    <input type="radio" value ="American Indian" name="race" id="American Indian" required>
+    <label for"American Indian">American Indian</label>
+    <input type="radio" value ="Alaskan" name="race" id="Alaskan" required>
+    <label for"Alaskan">Alaskan</label>
+    <input type="radio" value ="asian" name="race" id="asian" required>
+    <label for"asian">Asian</label>
+    <input type="radio" value ="Pacific Islander" name="race" id="Pacific Islander" required>
+    <label for"Pacific Islander">Pacific Islander</label>
+    <input type="radio" value ="Black/African Am." name="race" id="Black/African Am." required>
+    <label for"Black/African Am.">Black/African Am.</label>
+    <input type="radio" value ="white" name="race" id="white" required>
+    <label for"white">White</label>
+    <input type="radio" value ="Unk" name="race" id="Unk" required>
+    <label for"Unk">Unk</label>
+    <input type="radio" value ="Other" name="race" id="Other" required>
+    <label for"Other">Other</label><br/></br>
+    <p>14. Did mother have non-treponemal or treponemal tests at:</p>
+    <label for"ntreponemalortreptest">a) First prenatal visit?</label>
+    <input type="radio" value ="yes" name="ntreponemalortreptest" id="yes" required>
+    <label for"yes">Yes</label>
+    <input type="radio" value ="no" name="ntreponemalortreptest" id="no" required>
+    <label for"no">No</label>
+    <input type="radio" value ="Unk" name="ntreponemalortreptest" id="Unk" required>
+    <label for"Unk">Unk</label></br></br>
+    <label for"ntreponemalortreptest">b) 28-32 weeks gestation?</label>
+    <input type="radio" value ="yes" name="ntreponemalortreptest" id="yes" required>
+    <label for"yes">Yes</label>
+    <input type="radio" value ="no" name="ntreponemalortreptest" id="no" required>
+    <label for"no">No</label>
+    <input type="radio" value ="Unk" name="ntreponemalortreptest" id="Unk" required>
+    <label for"Unk">Unk</label></br></br>
+    <label for"ntreponemalortreptest">c) Delivery?</label>
+    <input type="radio" value ="yes" name="ntreponemalortreptest" id="yes" required>
+    <label for"yes">Yes</label>
+    <input type="radio" value ="no" name="ntreponemalortreptest" id="no" required>
+    <label for"no">No</label>
+    <input type="radio" value ="Unk" name="ntreponemalortreptest" id="Unk" required>
+    <label for"Unk">Unk</label></br></br>
+    <label for="mothersmaritalstatus">15. Mother's Marital Status</label>
+    <label for="singlenevermarried">Single, never married:</label>
+    <input id="singlenevermarried" name="mothersmaritalstatus" type ="text" placeholder="Single, never married" required/>
+    <label for="mothersmaritalstatus">Married:</label>
+    <input id="married" name="mothersmaritalstatus" type ="text" placeholder="Married"/>
+    <label for="separated/divorce">Separated/ Divorce:</label>
+    <input id="separated" name="mothersmaritalstatus" type ="text" placeholder="Separated/ Divorce"/></br></br>
+    <label for="widow">Widow:</label>
+    <input id="widow" name="mothersmaritalstatus" type ="text" placeholder="Widow" required/>
+    <label for="others">Others:</label>
+    <input id="others" name="mothersmaritalstatus" type ="text" placeholder="Others" required/>
+    <label for="unk">Unknown:</label>
+    <input id="unk" name="mothersmaritalstatus" type ="text" placeholder="Unknown"/></br></br>
+    <label for="testdateandresults">16. Indicate during pregnancy and delivery, dates and results of a) most recent and b) first <b>non-treponemal</b> tests:</label></br></br>
+    <label for="testdateandresults">a. Date and Result:</label>
+    <input id="testdateandresults" name="testdateandresults" type ="date" required/>
+    <label for="testdateandresults">Reactive:</label>
+    <input id="testdateandresults" name="testdateandresults" type ="text" placeholder="Reactive" required/>
+    <label for="testdateandresults">Nonreactive:</label>
+    <input id="testdateandresults" name="testdateandresults" type ="text" placeholder="Nonreactive" required/>
+    <label for="testdateandresults">Unknown:</label>
+    <input id="testdateandresults" name="testdateandresults" type ="text" placeholder="Unknown" required/></br></br>
+    <label for="testdateandresults">b. Date and Result:</label>
+    <input id="testdateandresults" name="testdateandresults" type ="date" required/>
+    <label for="testdateandresults">Reactive:</label>
+    <input id="testdateandresults" name="testdateandresults" type ="text" placeholder="Reactive" required/>
+    <label for="testdateandresults">Nonreactive:</label>
+    <input id="testdateandresults" name="testdateandresults" type ="text" placeholder="Nonreactive" required/>
+    <label for="testdateandresults">Unknown:</label>
+    <input id="testdateandresults" name="testdateandresults" type ="text" placeholder="Unknown" required/></br></br>
+    <label for="testresulttype">17. Indicate during pregnancy and delivery, dates, test type and results of a) first and b) most recent <b>treponemal</b> tests:</label></br></br>
+    <label for="testresulttype">a. Date, Test Type and Result:</label>
+    <input id="testresulttype" name="testresulttype" type ="date" required/>
+    <label for="testresulttype">EIA or CLIA:</label>
+    <input id="testresulttype" name="testresulttype" type ="text" placeholder="EIA/Chlamydia" required/>
+    <label for="testresulttype">TP-PA:</label>
+    <input id="testresulttype" name="testresulttype" type ="text" placeholder="TP-PA" required/>
+    <label for="testresulttype">Other:</label>
+    <input id="testresulttype" name="testresulttype" type ="text" placeholder="Other" required/>
+    <label for="testresulttype">Unknown:</label>
+    <input id="testresulttype" name="testresulttype" type ="text" placeholder="Unknown" required/>
+    <label for="testresulttype">Reactive:</label>
+    <input id="testresulttype" name="testresulttype" type ="text" placeholder="Reactive" required/>
+    <label for="testresulttype">Nonreactive:</label>
+    <input id="testresulttype" name="testresulttype" type ="text" placeholder="Nonreactive" required/>
+    <label for="testresulttype">Unknown:</label>
+    <input id="testresulttype" name="testresulttype" type ="text" placeholder="Unknown" required/></br></br>
+    <label for="testresulttype">b. Date, Test Type and Result:</label>
+    <input id="testresulttype" name="testresulttype" type ="date" required/>
+    <label for="testresulttype">EIA or CLIA:</label>
+    <input id="testresulttype" name="testresulttype" type ="text" placeholder="EIA/Chlamydia" required/>
+    <label for="testresulttype">TP-PA:</label>
+    <input id="testresulttype" name="testresulttype" type ="text" placeholder="TP-PA" required/>
+    <label for="testresulttype">Other:</label>
+    <input id="testresulttype" name="testresulttype" type ="text" placeholder="Other" required/>
+    <label for="testresulttype">Unknown:</label>
+    <input id="testresulttype" name="testresulttype" type ="text" placeholder="Unknown" required/>
+    <label for="testresulttype">Reactive:</label>
+    <input id="testresulttype" name="testresulttype" type ="text" placeholder="Reactive" required/>
+    <label for="testresulttype">Nonreactive:</label>
+    <input id="testresulttype" name="testresulttype" type ="text" placeholder="Nonreactive" required/>
+    <label for="testresulttype">Unknown:</label>
+    <input id="testresulttype" name="testresulttype" type ="text" placeholder="Unknown" required/></br></br>
+    <p>18. What was mother’s HIV status during pregnancy?</p>
+    <label for"mothershivstatus">Positive</label>
+    <input type="radio" value ="pos" name="mothershivstatus" id="pos" required>
+    <label for"neg">Negative</label>
+    <input type="radio" value ="neg" name="mothershivstatus" id="neg" required>
+    <label for"equivocal">Equivocal test</label>
+    <input type="radio" value ="equivocal" name="mothershivstatus" id="equivocal" required>
+    <label for"Unk">Unk</label>
+    <input type="radio" value ="unk" name="mothershivstatus" id="unk" required>
+    <label for"nottested">Patient not tested</label>
+    <input type="radio" value ="nottested" name="mothershivstatus" id="nottested" required></br></br>
+    <p>19. What CLINICAL stage of syphilis did mother have during pregnancy?</p>
+    <input type="radio" value ="pri" name="clinicalstage" id="pri" required>
+  <label for"pri">Primary</label>
+    <input type="radio" value ="sec" name="clinicalstage" id="sec" required>
+    <label for"sec">Secondary</label>
+    <input type="radio" value ="earlylatent" name="clinicalstage" id="earlylatent" required>
+    <label for"earlylatent">Early latent</label>
+    <input type="radio" value ="late" name="clinicalstage" id="late" required>
+    <label for"late">Late/ Late latent</label>
+    <input type="radio" value ="serofast" name="clinicalstage" id="serofast" required>
+    <label for"serofast">Previously treated/ Serofast</label>
+    <input type="radio" value ="other" name="clinicalstage" id="other" required>
+    <label for"other">Other</label>
+    <input type="radio" value ="unk" name="clinicalstage" id="unk" required>
+    <label for"other">Unknown</label></br></br>
+    <p>20. What SURVEILLANCE stage of syphilis did mother have during pregnancy?</p>
+    <input type="radio" value ="pri" name="surveillancestage" id="pri" required>
+    <label for"pri">Primary</label>
+    <input type="radio" value ="sec" name="surveillancestage" id="sec" required>
+    <label for"sec">Secondary</label>
+    <input type="radio" value ="earlylatent" name="surveillancestage" id="earlylatent" required>
+    <label for"earlylatent">Early latent</label>
+    <input type="radio" value ="late" name="surveillancestage" id="late" required>
+    <label for"late">Late/ Late latent</label>
+    <input type="radio" value ="other" name="surveillancestage" id="other" required>
+    <label for"other">Other</label>
+    <input type="radio" value ="unk" name="surveillancestage" id="unk" required>
+    <label for"other">Unknown</label></br></br>
+    <p>21. When did mother receive her first dose of benzathine penicillin?</p>
+    <input type="radio" value ="beforepreg" name="firstdosebenzathine" id="beforepreg" required>
+    <label for"beforepreg">Before Pregnancy</label>
+    <input type="radio" value ="1sttrim" name="firstdosebenzathine" id="1sttrim" required>
+    <label for"1sttrim">1st Trimester</label>
+    <input type="radio" value ="2ndtrim" name="firstdosebenzathine" id="2ndtrim" required>
+    <label for"2ndtrim">2nd Trimester</label>
+    <input type="radio" value ="3rdtrim" name="firstdosebenzathine" id="3rdtrim" required>
+    <label for"3rdtrim">3rd Trimester</label>
+    <input type="radio" value ="notx" name="firstdosebenzathine" id="notx" required>
+    <label for"notx">No Treatment</label>
+    <input type="radio" value ="unk" name="firstdosebenzathine" id="unk" required>
+    <label for"unk">Unknown</label></br></br>
+    <p>22. What was mother’s treatment?</p>
+    <input type="radio" value ="2.4mbenz" name="motherstx" id="2.4mbenz" required>
+    <label for"2.4mbenz">2.4 M units benzathine penicillin</label>
+    <input type="radio" value ="4.8mbenz" name="motherstx" id="4.8mbenz" required>
+    <label for"4.8mbenz">4.8 M units benzathine penicillin</label>
+    <input type="radio" value ="7.2mbenz" name="motherstx" id="7.2mbenz" required>
+    <label for"7.2mbenz">7.2 M units benzathine penicillin</label>
+    <input type="radio" value ="other" name="motherstx" id="other" required>
+    <label for"other">Other</label>
+    <input type="radio" value ="unk" name="motherstx" id="unk" required>
+    <label for"other">Unknown</label></br></br>
+    <p>23. Did mother have an appropriate serologic response?</p>
+    <input type="radio" value ="yessero" name="motherssero" id="yessero" required>
+    <label for"yessero">Yes, appropriate response</label>
+    <input type="radio" value ="nosero" name="motherssero" id="nosero" required>
+    <label for"nosero">No, inappropriate response: evidence of treatment failure or reinfection</label>
+    <input type="radio" value ="notdetermined" name="motherssero" id="notdetermined" required>
+    <label for"notdetermined">Response could not be determined from available non-treponemal titer information</label>
+    <input type="radio" value ="notime" name="motherssero" id="notime" required>
+    <label for"notime">Not enough time for titer to change</label></br></br>
+    <h3>PART II. INFANT/CHILD INFORMATION</h3>
+    <label for"dod">24. Date of Delivery:</label>
+    <input type="date" value ="dod" name="dod" id="dod" required>
+    <label for"unknown">Unknown</label>
+    <input type="radio" value ="unk" name="dod" id="unk" required></br></br>
+    <label for"vitalstatus">25. Vital Status:</label>
+    <label for"alive">Alive:</label>
+    <input type="radio" value ="alive" name="vitalstatus" id="alive" required>
+    <label for"bornalive">Born alive, the died:</label>
+    <input type="radio" value ="bornalive" name="vitalstatus" id="bornalive" required>
+    <label for"stillborn">Stillborn:</label>
+    <input type="radio" value ="stillborn" name="vitalstatus" id="stillborn" required>
+    <label for"unknown">Unknown</label>
+    <input type="radio" value ="unk" name="vitalstatus" id="unk" required></br></br>
+    <label for"dodeath">26. Indicate Date of death:</label>
+    <input type="date" value ="dodeath" name="dodeath" id="dodeath" required>
+    <label for"unknown">Unknown</label>
+    <input type="radio" value ="unk" name="dodeath" id="unk" required></br></br>
+    <label for"birthweight">27. Birthweight (in grams):</label>
+    <input type="text" value ="birthweight" name="birthweight" id="birthweight" required>
+    <label for"unk">Unknown:</label>
+    <input type="radio" value ="unk" name="birthweight" id="unk" required>
+    <label for"gestation">28. Estimated gestational age (in weeks):</label>
+    <input type="text" value ="gestation" name="gestation" id="gestation" required>
+    <label for"unk">Unknown:</label>
+    <input type="radio" value ="unk" name="gestation" id="unk" required></br></br>
+    <label for"rxn">29. a) Did infant/ child have a reactive non-treponemal test for syphilis? (eg., VDRL, RPR)</label>
+    <input type="radio" value ="yes" name="rxn" id="yes" required>
+    <label for"yes">Yes</label>
+    <input type="radio" value ="no" name="rxn" id="no" required>
+    <label for"notest">No test done</label>
+    <input type="radio" value ="notest" name="rxn" id="notest" required>
+    <label for"unk">Unknown</label>
+    <input type="radio" value ="unk" name="rxn" id="unk" required></br></br>
+    <label for"datereactive">b) When was the infant/child’s first reactive non-treponemal test for syphilis?</label>
+    <input type="date" value ="datereactive" name="datereactive" id="datereactive" required>
+    <label for"titer">c) Indicate titer of infant/ child’s non-treponemal test for syphilis:</label>
+    <input type="text" value ="titer" name="titer" id="titer" required></br></br>
+    <label for"rxn">30. a) Did infant/child have a reactive treponemal test for syphilis?</label>
+    <input type="radio" value ="yes" name="rxn" id="yes" required>
+    <label for"yes">Yes</label>
+    <input type="radio" value ="no" name="rxn" id="no" required>
+    <label for"notest">No test </label>
+    <input type="radio" value ="notest" name="rxn" id="notest" required>
+    <label for"unk">Unknown</label>
+    <input type="radio" value ="unk" name="rxn" id="unk" required>
+    <label for"datereactive">b) When was the infant/child’s first reactive treponemal test for syphilis?</label>
+    <input type="date" value ="datereactive" name="datereactive" id="datereactive" required></br></br>
+    <label for"rxn">31. Did the infant/child, placenta, or cord have darkfield exam, DFA, or special stains?</label>
+    <input type="radio" value ="yespos" name="darkfield" id="yespos" required>
+    <label for"yespos">Yes, positive</label>
+    <input type="radio" value ="yesneg" name="darkfield" id="yesneg" required>
+    <label for"yesneg">Yes, negative</label>
+    <input type="radio" value ="notest" name="darkfield" id="notest" required>
+    <label for"notest">No test </label>
+    <input type="radio" value ="nolesion" name="darkfield" id="nolesion" required>
+    <label for"nolesion">No lesions and no tissue to test </label>
+    <input type="radio" value ="unk" name="darkfield" id="unk" required>
+    <label for"unk">Unknown</label></br></br>
+    <label for"rxn">32. Did the Infant/child have any signs of CS? (check all that apply)</label>
+    <input type="checkbox" value ="hepatosplen" name="signsofcs" id="hepatosplen" required>
+    <label for"hepatosplen">Hepatosplenomegaly</label>
+    <input type="checkbox" value ="jaundice" name="signsofcs" id="jaundice" required>
+    <label for"jaundice">Jaundice/ Hepatitis</label>
+    <input type="checkbox" value ="nosigns" name="signsofcs" id="nosigns" required>
+    <label for"nosigns">No signs/ Asymptomatic </label>
+    <input type="checkbox" value ="pseudoparalysis" name="signsofcs" id="pseudoparalysis" required>
+    <label for"pseudoparalysis">pseudo paralysis </label>
+    <input type="checkbox" value ="edema" name="signsofcs" id="edema" required>
+    <label for"edema">Edema </label>
+    <input type="checkbox" value ="condylomalata" name="signsofcs" id="condylomalata" required>
+    <label for"condylomalata">Condyloma lata</label>
+    <input type="checkbox" value ="snuffles" name="signsofcs" id="snuffles" required>
+    <label for"snuffles">Snuffles </label>
+    <input type="checkbox" value ="syphiliticskinrash" name="signsofcs" id="syphiliticskinrash" required>
+    <label for"syphiliticskinrash">Syphilitic Skin Rash </label>
+    <input type="checkbox" value ="other" name="signsofcs" id="other" required>
+    <label for"other">Other </label>
+    <input type="checkbox" value ="unk" name="signsofcs" id="unk" required>
+    <label for"unk">Unknown</label></br></br>
+    <label for"rxn">33. Did the infant/child have long bone X-rays?</label>
+    <input type="radio" value ="yeschanges" name="bonexray" id="yeschanges" required>
+    <label for"yeschanges">Yes, changes consistent with CS</label>
+    <input type="radio" value ="nochanges" name="bonexray" id="nochanges" required>
+    <label for"nochanges">Yes, no signs of CS</label>
+    <input type="radio" value ="noxray" name="bonexray" id="noxray" required>
+    <label for"noxray">No X-rays </label>
+    <input type="radio" value ="unk" name="bonexray" id="unk" required>
+    <label for"unk">Unknown </label></br></br>
+    <label for"rxn">34. Did the infant/child have a CSF-VDRL?</label>
+    <input type="radio" value ="yesreactive" name="csfvdrl" id="yesreactive" required>
+    <label for"yesreactive">Yes, Reactive</label>
+    <input type="radio" value ="yesnonreactive" name="csfvdrl" id="yesnonreactive" required>
+    <label for"yesnonreactive">Yes, nonreactive</label>
+    <input type="radio" value ="notest" name="csfvdrl" id="notest" required>
+    <label for"notest">No test </label>
+    <input type="radio" value ="unk" name="csfvdrl" id="unk" required>
+    <label for"unk">Unknown </label></br></br>
+    <label for"rxn">35. Did the infant/child have a CSF WBC count or CSF protein test?</label>
+    <input type="checkbox" value ="csfwbc" name="csfwbcprot" id="csfwbc" required>
+    <label for"csfwbc">Yes, CSF WBC count elevated</label>
+    <input type="checkbox" value ="csfprot" name="csfwbcprot" id="csfprot" required>
+    <label for"csfprot">Yes, CSF protein elevated</label>
+    <input type="checkbox" value ="bothtestelevated" name="csfwbcprot" id="bothtestelevated" required>
+    <label for"bothtestelevated">both tests elevated </label>
+    <input type="checkbox" value ="notestelevated" name="csfwbcprot" id="notestelevated" required>
+    <label for"notestelevated">neither test elevated </label>
+    <input type="checkbox" value ="notest" name="csfwbcprot" id="notest" required>
+    <label for"notest">No test </label>
+    <input type="checkbox" value ="unk" name="csfwbcprot" id="unk" required>
+    <label for"unk">Unknown</label>
+    <label for"childtreated">36. Was the infant/child treated?</label>
+    <input type="checkbox" value ="yesprocaine" name="childtreated" id="yesprocaine" required>
+    <label for"yesprocaine">Yes, with aqueous or procaine penicillin for 10 days</label>
+    <input type="checkbox" value ="yesbenzathine" name="childtreated" id="yesbenzathine" required>
+    <label for"yesbenzathine">Yes, with benzathine penicillin x 1</label>
+    <input type="checkbox" value ="yesother" name="childtreated" id="yesother" required>
+    <label for"yesother">Yes, with other treatment </label>
+    <input type="checkbox" value ="notreatment" name="childtreated" id="notreatment" required>
+    <label for"notreatment">No treatment </label>
+    <input type="checkbox" value ="unk" name="childtreated" id="unk" required>
+    <label for"unk">Unknown</label></br></br>
+    <h3>PART III. CONGENITAL SYPHILIS CASE CLASSIFICATION</h3>
+    <label for"classification">37. Classification:</label>
+    <input type="checkbox" value ="notacase" name="classification" id="notacase" required>
+    <label for"notacase">Not a case</label>
+    <input type="checkbox" value ="confirmedcase" name="classification" id="confirmedcase" required>
+    <label for"confirmedcase">Confirmed case</label>
+    <input type="checkbox" value ="syphiliticstillbirth" name="classification" id="syphiliticstillbirth" required>
+    <label for"syphiliticstillbirth">Syphilitic stillbirth </label>
+    <input type="checkbox" value ="probablecase" name="classification" id="probablecase" required>
+    <label for"probablecase">Probable case </label></br></br>
+
+</br></br>
+
+</form>
+</div>
+</article>
+</section>
+</html>

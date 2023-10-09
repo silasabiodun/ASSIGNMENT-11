@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<meta name="keywords" content="HTML 5, CSS 3, JavaScript">
+<meta name="description" content="Dynamic Web Development">
+<meta name="author" content="Mildred">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grid View Layout</title>
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="../css/tiwatayo__abiodun__11.css">
+</head>
+<body>
+<header>
+  <div id="container0">
+  <nav class ="col-12">
+  <ul class="one">
+    <li><a href= "pages/pindexpage.html">Home</a></li>
+    <li><a href= "#">Log out</a></li>
+  </ul>
+  </nav>
+</header>
+</div>
+  <section class="flex-container">
+  <nav class ="col-3">
+  <ul class="two">
+    <li><a href= "../pages/personalinfo.html">Personal Information</a></li>
+    <li><a href= "../pages/risk factor.html">Risk Factors</a></li>
+    <li><a href= "../pages/hepb.html">Hepatitis B</a></li>
+    <li><a href= "../pages/syphilis.html">Congenital Syphilis</a></li>
+    <li><a href= "../pages/gonorrhea.html">Chlamydia & Gonorrhea</a></li>
+  </ul>
+  </nav>
+  <article ="col-9">
+
+  <div id="container2">
+  <div id="container3">
+  <h2>Registration Form</h2>
+</div>
+  <form class="regform" action="" method="POST" autocomplete="off">
+  <label for="firstname">First Name:</label><br/>
+  <input id="firstname" name="firstname" type ="text" placeholder="First Name" optional/><br/>
+  <label for="middlename">Middle Name:</label><br/>
+  <input id="middlename" name="middlename" type ="text" placeholder="Middle Name"/><br/>
+  <label for="lastname">Last Name:</label><br/>
+  <input id="lastname" name="lastname" type ="text" placeholder="Last Name" optional/><br/>
+  <label for="uniqueid">Unique ID</label><br/>
+  <input id="uniqueid" name="uniqueid" type ="password" placeholder="Unique ID" optional autofocus/><br/>
+   <label for"genderidentity">Gender Identity</label><br/>
+   <input type="radio" value ="male" name="genderidentity" id="male" required>
+   <label for"Male">Male</label>
+   <input type="radio" value ="female" name="genderidentity" id="female" required>
+   <label for"female">Female</label>
+   <input type="radio" value ="transgender" name="genderidentity" id="transgender" required>
+   <label for"transgender">Transgender</label><br/>
+<label for"sexualorientation">Sexual Orientation</label><br/>
+<select id="sexualorientation" name="sexualorientation" size="3">
+<option selected disabled>[Select one]</option>
+<option value="heterosexual">Heterosexual</option>
+<option value="bisexual">Bisexual</option>
+<option value="homosexual">Homosexual</option>
+</select></br>
+
+<label for="dob">Date of Birth</label><br/>
+<input type="date" id="dob" name="dob" required><br/>
+<input type="reset" name="reset"/>
+<input type="submit" value="Submit"/>
+
+</form>
+</div>
+</article>
+</section>
+
+</body>
+</html>

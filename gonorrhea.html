@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="keywords" content="HTML 5, CSS 3, JavaScript">
+<meta name="description" content="Dynamic Web Development">
+<meta name="author" content="Mildred">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>STI</title>
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="../css/sti.css">
+</head>
+<body>
+  <header>
+  <div id="container0">
+    <section class="flex-container">
+  <nav class ="col-12">
+  <ul class="one">
+    <li><a href= "#">Home</a></li>
+    <li><a href= "#">Log out</a></li>
+  </ul>
+  </nav>
+</div>
+</header>
+  <nav class ="col-2">
+  <ul class="two">
+    <li><a href= "../pages/personalinfo.html">Personal Information</a></li>
+    <li><a href= "../pages/risk factor.html">Risk Factors</a></li>
+    <li><a href= "../pages/hepb.html">Hepatitis B</a></li>
+    <li><a href= "../pages/syphilis.html">Congenital Syphilis</a></li>
+    <li><a href= "../pages/gonorrhea.html">Chlamydia & Gonorrhea</a></li>
+  </ul>
+  </nav>
+  <div id="container1">
+      <article class="col-10">
+    <form method ="post" action="" autocomplete="off">
+    <h2><b>STI case Reporting Form for Chlamydia and Gonorrhea</b></h2>
+<table>
+    <h3 style="background-color:grey;">Clinic Information</h3>
+  <tr>
+    <th>Date:</th>
+    <td><input type="text" name="dateofreport"/></td>
+    <th>Person Completing Form:</th>
+    <td><input type="text" name="nameofreport"/></td>
+  </tr>
+  <tr>
+    <th>Health Provider:</th>
+    <td><input type="text" name="Health Provider"/></td>
+    <th>Contact Phone number/fax:</th>
+    <td><input type="text" name="contactof healthprovider"/></td>
+  </tr>
+  </table>
+  <p><i><b>Your lab reported a communicable disease on the patient shown below and listed you as the provider. The Oregon Department of Human Services and Washington County require additional information. The fax cover sheet you have received references Oregon Law (ORS 433) that requires you to report this information. Please complete the form within 24 hours, or by the end of the next working day, and fax it back to our office at 503-846-3644. If you prefer you may call to report the required information. We appreciate your cooperation and prompt handling of this confidential report.</i></b></p>
+<table>
+  <h2 style="background-color:grey;">Patient Information - Please complete all information requested below</h2>
+  <tr>
+    <th>1. NAME:</th>
+    <td><input type="text" name="NAME"/></td>
+    <th>DATE OF BIRTH:</th>
+    <td><input type="text" name="DOB"/></td>
+    <th>GENDER:</th>
+    <td><input type="text" name="GENDER"/></td>
+  </tr>
+  <tr>
+    <th>2. HOME ADDRESS:</th>
+    <td><input type="text" name="HOME ADD."/></td>
+    <th>PHONE NUMBER:</th>
+    <td><input type="text" name="PHONE"/></td>
+    <th>ALTERNATIVE#:</th>
+    <td><input type="text" name="ALT. NUM."/></td>
+  </tr>
+</table></br>
+
+<label for"genderidentity"><b>3. PREGNANCY TEST RESULTS:</b></label><br/>
+<input type="radio" value ="N/A" name="pregtestresult" id="N/A" required>
+<label for"N/A">N/A</label>
+<input type="radio" value ="Negative" name="pregtestresult" id="Negative" required>
+<label for"Negative">Negative</label>
+<input type="radio" value ="unknown" name="pregtestresult" id="unknown" required>
+<label for"unknown">Unknown</label>
+<input type="radio" value ="positive" name="pregtestresult" id="positive" required>
+<label for"positive">Positive</label>
+<label for"noofwks">If Positive, How many weeks?</label>
+<input type="text" value ="noofwks" name="pregtestresult" id="noofwks" required><br/></br>
+
+    <label for"race"><b>4. ETHNICITY:</b></label><br/>
+    <input type="radio" value ="Hispanic" name="Ethnicity" id="Hispanic" required>
+    <label for"Hispanic">Hispanic</label>
+    <input type="radio" value ="Nonhispanic" name="Ethnicity" id="Nonhispanic" required>
+    <label for"Nonhispanic">Non-Hispanic</label>
+    <input type="radio" value ="unk" name="Ethnicity" id="unk" required>
+    <label for"unk">Unk</label></br></br>
+    <label for"race">Race:</label><br/>
+    <input type="radio" value ="American Indian" name="race" id="American Indian" required>
+    <label for"American Indian">American Indian</label>
+    <input type="radio" value ="Alaskan" name="race" id="Alaskan" required>
+    <label for"Alaskan">Alaskan</label>
+    <input type="radio" value ="asian" name="race" id="asian" required>
+    <label for"asian">Asian</label>
+    <input type="radio" value ="Pacific Islander" name="race" id="Pacific Islander" required>
+    <label for"Pacific Islander">Pacific Islander</label>
+    <input type="radio" value ="Black/African Am." name="race" id="Black/African Am." required>
+    <label for"Black/African Am.">Black/African Am.</label>
+    <input type="radio" value ="white" name="race" id="white" required>
+    <label for"white">White</label>
+    <input type="radio" value ="Unk" name="race" id="Unk" required>
+    <label for"Unk">Unk</label>
+    <input type="radio" value ="Other" name="race" id="Other" required>
+    <label for"Other">Other</label><br/></br>
+    <label for"gendersexpartner"><b>GENDER OF SEX PARTNER(S):</b></label><br/>
+    <input type="radio" value ="male" name="gendersexpartner" id="male" required>
+    <label for"male">Male</label>
+    <input type="radio" value ="female" name="gendersexpartner" id="female" required>
+    <label for"female">Female</label>
+    <input type="radio" value ="both" name="gendersexpartner" id="both" required>
+    <label for"both">Both</label>
+    <input type="radio" value ="unk" name="gendersexpartner" id="unk" required>
+    <label for"unk">Unk</label></br></br>
+
+    <label for"testresulttype"><b>5. TEST RESULT TYPE:</b></label><br/>
+    <input type="radio" value ="Chlamydiapos" name="testresulttype" id="Chlamydiapos" required>
+    <label for"Chlamydiapos">Chlamydia Positive Result and Date:</label>
+    <input type="date" value ="Chlamydiapos" name="testresulttype" id="Chlamydiapos" required>
+    <input type="radio" value ="Gonorrheapos" name="testresulttype" id="Gonorrheapos" required>
+    <label for"Gonorrheapos">Gonorrhea Positive Result and Date:</label>
+    <input type="date" value ="Gonorrheapos" name="testresulttype" id="Gonorrheapos" required></br></br>
+    <label for"previoushivtest"><b>PREVIOUS HIV TESTING:</b></label><br/>
+    <input type="radio" value ="yes" name="previoushivtest" id="yes" required>
+    <label for"yes">Yes</label>
+    <input type="radio" value ="no" name="previoushivtest" id="no" required>
+    <label for"no">No</label>
+    <input type="radio" value ="Unk" name="previoushivtest" id="Unk" required>
+    <label for"Unk">Unk</label>
+    <label for"ifyes">If yes, last result was?</label>
+    <input type="radio" value ="hivpos" name="ifyes" id="hivpos" required>
+    <label for"hivpos">POS</label>
+    <input type="radio" value ="hivneg" name="ifyes" id="hivneg" required>
+    <label for"hivneg">NEG</label>
+    <input type="radio" value ="Unk" name="ifyes" id="Unk" required>
+    <label for"Unk">Unk</label></br>
+    <label for"rforexam"><b>6. REASON FOR EXAM:</b></label><br/>
+    <input type="radio" value ="symptomatic" name="rforexam" id="symptomatic" required>
+    <label for"symptomatic">Symptomatic</label>
+    <input type="radio" value ="routineexam" name="rforexam" id="routineexam" required>
+    <label for"routineexam">Routine Exam</label>
+    <input type="radio" value ="testforcure" name="rforexam" id="testforcure" required>
+    <label for"testforcure">Test for Cure</label>
+    <input type="radio" value ="exposedtoinfection" name="rforexam" id="exposedtoinfection" required>
+    <label for"exposedtoinfection">Exposed to Infection</label>
+    <input type="radio" value ="pregnant" name="rforexam" id="pregnant" required>
+    <label for"pregnant">Pregnant</label></br></br>
+    <label for"diagnosis"><b>DIAGNOSIS:</b></label><br/>
+    <input type="radio" value ="Asymptomatic" name="diagnosis" id="Asymptomatic" required>
+    <label for"Asymptomatic">Asymptomatic</label>
+    <input type="radio" value ="symptomaticuncomplicated" name="diagnosis" id="symptomaticuncomplicated" required>
+    <label for"symptomaticuncomplicated">Symptomatic-Uncomplicated</label>
+    <input type="radio" value ="pid" name="diagnosis" id="pid" required>
+    <label for"pid">Pelvic Inflammatory Disease(PID)</label>
+    <input type="radio" value ="ophthalmia/conjunctivitis" name="diagnosis" id="ophthalmia/conjunctivitis" required>
+    <label for"opththalmia/conjuctivitis">Opththalmia/Conjunctivitis</label>
+    <input type="radio" value ="Disseminated" name="diagnosis" id="Disseminated" required>
+    <label for"Disseminated">Disseminated</label></br></br>
+    <label for"sites"><b>SITES:</b></label><br/>
+    <input type="radio" value ="cervix" name="sites" id="cervix" required>
+    <label for"cervix">Cervix</label>
+    <input type="radio" value ="vaginal" name="sites" id="vaginal" required>
+    <label for"vaginal">Symptomatic-Vaginal</label>
+    <input type="radio" value ="urethra" name="sites" id="urethra" required>
+    <label for"urethra">Urethra</label>
+    <input type="radio" value ="rectum" name="sites" id="rectum" required>
+    <label for"rectum">Rectum</label>
+    <input type="radio" value ="ocular" name="sites" id="ocular" required>
+    <label for"ocular">Ocular</label>
+    <input type="radio" value ="urine" name="sites" id="urine" required>
+    <label for"urine">Urine</label>
+    <input type="radio" value ="pharynx" name="sites" id="pharynx" required>
+    <label for"pharynx">Pharynx</label>
+    <input type="radio" value ="other" name="sites" id="other" required>
+    <label for"other">Other</label></br></br>
+<table>
+    <tr>
+    <th style="background-color:grey;">7. GONORRHEA TREATMENT PLAN:</th>
+    <th style="background-color:grey;">CHLAMYDIA TREATMENT PLAN:</th>
+  </tr>
+  <tr>
+    <th>Rocephin/Ceftriaxone 250mg IM x 1 <input type="checkbox" name="Rocephin"/></br>Date <input type="date" value="Rocephin" name="date" id="date"/></br>PLUS</th>
+
+    <th>Azithromycin 1gm orally in a single dose. <input type="checkbox" name="Azithromycin"/></br>OR</th>
+  </tr>
+  <tr>
+    <td>Azithromycin 1gm orally in a single dose. <input type="checkbox" name="Azithromycin"/></td>
+
+    <td>Doxycycline 100mg BID x 7 days.(contraindicated during pregnancy)  <input type="checkbox" name="Doxycycline"/>  </br>Date<input type="date" value="Doxycycline" name="date" id="date"</td>
+  </tr>
+    <tr>
+      <td style="background-color:grey;">Alternative Treatment Regimens:</td>
+      <td style="background-color:grey;">Alternative Treatment Regimens:</td></br></br>
+    </tr>
+<tr>
+<td>Cefixime 400mg orally in a single dose <input type="checkbox" name="Cefixime"/> Date <input type="date" value="Cefixime" name="date" id="date" </br> PLUS</td>
+<td> Amoxicillin 500mg orally tid X 7 days <input type="checkbox" name="Amoxicillin" /> Date <input type="date" value="Amoxicillin" name="date" id="date"</td>
+</tr>
+<tr>
+  <td>Azithromycin 1 gm orally in a single dose <input type="checkbox" name="Azithromycin"/> </td>
+  <td></td>
+</tr>
+<tr>
+<td>Other Treatment: <input type="text" name="othertx"/> (test of cure recommended at 1 month) DATE <input type="date" value="date" name="date" id="date" </br></td>
+<td>Other Treatment: <input type="text" name="othertx"/> Date <input type="date" value="date" name="date" id="date" </br></td>
+</tr>
+</table>
+
+<td><b>8. IF NOT TREATED YET — PATIENT NOTIFIED OF INFECTION:</b>   YES:<input type="radio" name="ptnotified"/>  NO:<input type="radio" name="ptnotified"</td>
+<td><b>Does the provider need assistance in contacting a client that has not responded for treatment?</b>   YES:<input type="radio" name="providerassist"/>  NO:<input type="radio" name="providerassist"</td>
+<p style="background-color:grey;"><b>9. PARTNER MANAGEMENT PLAN — Ensuring Partner Treatment</b></p>
+
+<p>Expedited Partner Therapy dispensed at time of visit? <input type="radio" name="eptherapy" NO <input type="radio" name="eptherapy" YES How many partners? <input type="text" name="eptherapy" </br>
+(See: OHA/STD Prevention for EPT guidelines and policy).</p>
+<p>When resources allow the health department will be contacting gonorrhea cases and high risk chlamydia cases to offer partner services.</p>
+<p>Please notify patient that public health worker may be contacting them to offer partner services.</p>
+<p><input type="checkbox" name=""/> PROVIDER REQUESTS THAT CLIENT NOT BE CONTACTED BY PUBLIC HEALTH/PROVIDER WILL ASSURE PARTNER TREATMENT</p>
+<div>
+  <h4>CURRENT RECOMMENDED TREATMENT- See CDC Guidelines at: http:www.cdc.gov/std/treatment</h4>
+</div>
+</table>
+    </form>
+  </article>
+  </section>
+</div>
+  </html>

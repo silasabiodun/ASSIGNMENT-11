@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="keywords" content="HTML 5, CSS 3, JavaScript">
+<meta name="description" content="Dynamic Web Development">
+<meta name="author" content="Mildred">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HepB</title>
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="../css/hepb.css">
+</head>
+<body>
+  <section class="flex-container">
+  <div id="container0">
+  <nav class ="col-12">
+  <ul class="one">
+    <li><a href= "../pages/pindexpage.html">Home</a></li>
+    <li><a href= "#">Log out</a></li>
+  </ul>
+  </nav>
+</div>
+<div id="container1">
+  <nav class ="col-3">
+  <ul class="two">
+    <li><a href= "../pages/personalinfo.html">Personal Information</a></li>
+    <li><a href= "../pages/risk factor.html">Risk Factors</a></li>
+    <li><a href= "../pages/hepb.html">Hepatitis B</a></li>
+    <li><a href= "../pages/syphilis.html">Congenital Syphilis</a></li>
+    <li><a href= "../pages/gonorrhea.html">Chlamydia & Gonorrhea</a></li>
+  </ul>
+  </nav>
+</div>
+<div id="hepb">
+
+  <article ="col-9">
+  <form class="hepbform" method ="post" action="" autocomplete="off">
+    <h2>Hepatitis B Infected Pregnant Woman Reporting Form</h2>
+    <label for="firstname">First Name:</label>
+    <input id="firstname" name="firstname" type ="text" placeholder="First Name" optional/>
+    <label for="middlename">Middle Name:</label>
+    <input id="middlename" name="middlename" type ="text" placeholder="Middle Name"/>
+    <label for="lastname">Last Name:</label>
+    <input id="lastname" name="lastname" type ="text" placeholder="Last Name" optional/><br/></br>
+    <label for="dob">Date of Birth</label>
+    <input type="date" id="dob" name="dob" required>
+    <label for="edd">Estimated Date of Delivery</label>
+    <input type="date" id="edd" name="edd" required><br/></br>
+    <label for"Patientaware">Patient Aware of HepB status?</label><br/>
+    <select id="Patientaware" name="Patientaware" size="3">
+    <option selected disabled>[Select one]</option>
+    <option value="Yes">Yes</option>
+    <option value="No">No</option>
+    <option value="Unknown">Unknown</option>
+  </select></br></br>
+    <label for="address">Address:</label>
+    <input id="adress" name="address" type ="text"  required/>
+    <label for="city">City:</label>
+    <input id="city" name="city" type ="text" />
+    <label for="state">State:</label>
+    <input id="state" name="state" type ="text"  optional/><br/></br>
+    <label for ="tel">Telephone:</label><br/>
+    <input type ="tel" name="tel" id ="tel"/><br/></br>
+    <label for"insurance">Type of Insurance</label><br/>
+    <input type="radio" value ="private" name="insurance" id="private" required>
+    <label for"private">Private</label>
+    <input type="radio" value ="medicaid" name="insurance" id="madicaid" required>
+    <label for"medicaid">Medicaid</label>
+    <input type="radio" value ="medicare" name="insurance" id="medicare" required>
+    <label for"medicare">Medicare</label>
+    <input type="radio" value ="unknown" name="insurance" id="unknown" required>
+    <label for"unknown">Unknown</label><br/></br>
+    <label for"race">Race:</label><br/>
+    <input type="radio" value ="American Indian/Alaskan Native" name="race" id="American Indian/Alaskan Native" required>
+    <label for"American Indian/Alaskan Native">American Indian/Alaskan Native</label>
+    <input type="radio" value ="asian" name="race" id="asian" required>
+    <label for"asian">Asian</label>
+    <input type="radio" value ="Native Hawaiian/Pacific Islander" name="race" id="Native Hawaiian/Pacific Islander" required>
+    <label for"Native Hawaiian/Pacific Islander">Native Hawaiian/Pacific Islander</label>
+    <input type="radio" value ="Black/African Am." name="race" id="Black/African Am." required>
+    <label for"Black/African Am.">Black/African Am.</label>
+    <input type="radio" value ="Unk" name="race" id="Unk" required>
+    <label for"Unk">Unk</label>
+    <input type="radio" value ="Other" name="race" id="Other" required>
+    <label for"Other">Other</label><br/></br>
+    <label for"race">Hispanic:</label><br/>
+    <input type="radio" value ="Yes" name="Hispanic" id="Yes" required>
+    <label for"yes">Yes</label>
+    <input type="radio" value ="no" name="Hispanic" id="No" required>
+    <label for"no">No</label>
+    <input type="radio" value ="unk" name="Hispanic" id="unk" required>
+    <label for"unk">Unk</label></br></br>
+    <label for="country">Country of Birth:</label>
+    <input id="country" name="country" type ="text" placeholder="First Name" required/>
+    <label for="primarylanguage">Primary Language:</label>
+    <input id="primarylanguage" name="primarylanguage" type ="text" placeholder="Primary Language"/></br>
+<div>
+  <h3>LABORATORY INFORMATION</h3>
+</div>
+<p>
+  Laboratory Results:</br>
+  Check off below any POSITIVE labs and attach positive Hep B lab results</p>
+  <input type="radio" value ="HBsAg" name="laboratoryresults" id="HBsAg" required>
+  <label for"HBsAg">HBsAg(Hep B surface antigen)</label>
+  <input type="radio" value ="HBeAg" name="laboratoryresults" id="HBeAg" required>
+  <label for"HBeAg">HBeAg(Hep Be Antigen)</label></br></br>
+  <input type="radio" value ="IgM anti-HBc" name="laboratoryresults" id="IgM anti-HBc" required>
+  <label for"IgM anti-HBc">IgM anti-HBc(IgM antibody to Hep B core antigen)</label>
+  <input type="radio" value ="HBV DNA" name="laboratoryresults" id="HBV DNA" required>
+  <label for"HBV DNA">HBV DNA(Hep Bvirus DNA)</label></br>
+  <div>
+    <h3>CLINICAL INFORMATION</h3>
+  </div>
+  <label for="OBproviderln">OB Provider Last Name:</label>
+  <input id="OBproviderln" name="OBproviderln" type ="text" placeholder="OB Provider Last Name"/>
+  <label for="OBproviderfn">OB Provider First Name:</label>
+  <input id="OBproviderfn" name="OBproviderfn" type ="text" placeholder="OB Provider First Name"/></br></br>
+  <label for"provider">Provider Type:</label><br/>
+  <input type="radio" value ="MD/DO" name="provider" id="MD/DO" required>
+  <label for"MD/DO">MD/DO</label>
+  <input type="radio" value ="CNM/NP" name="provider" id="CNM/NP" required>
+  <label for"CNM/NP">CNM/NP</label>
+  <input type="radio" value ="PA" name="provider" id="PA" required>
+  <label for"PA">PA</label></br></br>
+  <label for="edf">Expected Delivery Facility:</label>
+  <input id="edf" name="edf" type ="text" placeholder="Expected Delivery Facility"/></br></br>
+  <label for="rhcf">Reporting Health Care Facility:</label>
+  <input id="rhcf" name="rhcf" type ="text" placeholder="Reporting Health Care Facility"/></br>
+  <label for="address2">Address:</label>
+  <input id="address2" name="address2" type ="text"  required/>
+  <label for="city2">City:</label>
+  <input id="city2" name="city2" type ="text" />
+  <label for="state2">State:</label>
+  <input id="state2" name="state2" type ="text"  optional/><br/></br>
+  <label for="contactperson">Contact Person at Reporting Facility:</label>
+  <input id="contactperson" name="contactperson" type ="text" placeholder="Contact Person at Reporting Facility"/></br></br>
+  <label for="directphone">Direct Phone:</label>
+  <input id="directphone" name="directphone" type ="text"  required/>
+  <label for="dateformcompleted">Date Form Completed:</label>
+  <input id="dateformcompleted" name="dateformcompleted" type ="text" />
+  <label for="positivelabsattached">Positive Labs Attached:</label>
+  <input id="positivelabsattached" name="positivelabsattached"  type ="radio"/></br>
+
+</form>
+</article>
+</div>
+</section>
+</body>
+</html>
