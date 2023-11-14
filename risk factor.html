@@ -1,83 +1,157 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-<meta charset="utf-8">
-<meta name ="keyboards" content ="HTML 5, CSS 3, JavaScript, JQuery, AngularJs"/>
-<meta name ="description" content ="Dynamic web development">
-<meta name ="author" content ="silas">
-<meta name ="viewport" content ="width=device-width,initial-scale=1.0">
-<title>front end</title>
+<meta charset="UTF-8">
+<meta name="keywords" content="HTML 5, CSS 3, JavaScript">
+<meta name="description" content="Dynamic Web Development">
+<meta name="author" content="Mildred">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RISK FACTORS</title>
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="../css/tiwatayo_abiodun_15.css">
 <style>
-h2{
-  text-align: left ;
+*{
+  box-sizing:border-box;
 }
-a{
-  text-decoration: none;
+.row::after{
+  content:"";
+  clear:both;
+  display:table;
+}
+
+[class*="col-"]{
+  float:left;
+  padding:0px;
+}
+
+[class*="col-"]{
+  width:100%;
+}
+@media only screen and (min-width:768px){
+.col-1{
+  width:8.33%;
+}
+.col-2{
+  width:16.66%;
+}
+.col-3{
+  width:25%;
+}
+.col-4{
+  width:33.3%;
+}
+.col-5{
+  width:41.66%;
+}
+.col-6{
+  width:50%;
+}
+.col-7{
+  width:58.33%;
+}
+.col-8{
+  width:66.66%;
+}
+.col-9{
+  width:75%;
+}
+.col-10{
+  width:83.33%;
+}
+.col-11{
+  width:91.66%;
+}
+.col-12{
+  width:100%;
+}
+}
+.flex-container{
+  display:flex
+}
+.flex-container > *{
+  margin:auto;
+  padding:auto;
+}
+ul{
+  list-style-type: none;
+}
+#firstnav{
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  height: 100px;
+  background-color: yellow;
+  color: black;
+}
+#firstnav > li{
+  display:inline;
+  margin: 50px;
+}
+#firstnav > li{
+  display:inline;
+  margin: 50px;
+}
+#firstnav a{
+  text-decoration:none;
+  float:right;
+  text-indent: 5px;
+  padding-right: 10px;
+}
+#container1, #container2{
+  float:left;
+  width:450px;
+  height:400px;
+  margin:20px;
+  margin-top: 100px;
+  border:5px solid purple;
+}
+
+#option1, #option2, #option3, #option4, #option5, #option6, #option7{
+  height:30px;
+  width:auto;
+  border: 2px solid black;
+  margin:5px;
 }
 </style>
+<script>
+function allowDrop(ev){
+  ev.preventDefault();
+}
+
+function drag(ev){
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev){
+  ev.preventDefault();
+  const data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+
+</script>
 </head>
-
 <body>
- <h1>My Favorite Foods.</h1>
- <a href="#Top 3 Favorites for breakfast">Top 3 Favorites for breakfast</a><br>
- <a href="#Top 3 favorites for lunch">Top 3 favorites for lunch</a><br>
- <a href="#Top 3 Snacks">Top 3 Snacks</a><br>
- <a href="#Top 3 Favorites for dinner">Top 3 Favorites for dinner</a><br>
+  <header>
+    <nav id="firstnav">
+    <ul>
+      <li><a href= "#">Home</a></li>
+    </ul>
+  </nav>
+  </header>
+  <section class="flex-container">
+<h1 >RISK FACTORS</h1>
+<div id=container1 ondrop="drop(event)" ondragover="allowDrop(event)">
+<div id="option1" draggable="true" ondragstart="drag(event)">Had sex with males </div>
+<div id="option2" draggable="true" ondragstart="drag(event)">Had sex with females </div>
+<div id="option3" draggable="true" ondragstart="drag(event)">Victim of sexual assault </div>
+<div id="option4" draggable="true" ondragstart="drag(event)">Homeless</div>
+<div id="option5" draggable="true" ondragstart="drag(event)">Incacerated </div>
+<div id="option6" draggable="true" ondragstart="drag(event)">Possible exposure </div>
+<div id="option7" draggable="true" ondragstart="drag(event)">Routine screening </div>
 
- <h2 id="Top 3 Favorites for breakfast">Top 3 Favorites for breakfast.</h2>
- <ol type ="1">
-   <li>Bread and Fried egg</li>
-   <li>Pancake and banana smootie</li>
-   <li>Toast Bread and Tea</li>
- </ol>
- <h2 id="Top 3 favorites for lunch">Top 3 favorites for lunch.</h2>
- <ol type ="1" start ="4">
-  <li>Jollof rice and fried chicken</li>
-  <li>Beans porridge and Fried plantain</li>
-  <li>Pasta and Stewed fish</li>
-</ol>
-<h2 id="Top 3 Snacks">Top 3 Snacks.</h2>
-  <ol type ="a">
-   <li>Meat pie</li>
-   <li>Popcorn</li>
-   <li>Chinchin</li>
- </ol>
- <h2 id="Top 3 Favorites for dinner">Top 3 Favorites for dinner.</h2>
- <ol type ="1" start ="7">
- <li>Swallow and vegetable soup</li>
- <li>Lentils porridge and oat meal</li>
- <li>Pap and MoiMoi</li>
-</ol>
-<h1>My Favorite Foods.</h1>
-<a href="#Top 3 Favorites for breakfast2">Top 3 Favorites for breakfast</a><br>
-<a href="#Top 3 favorites for lunch2">Top 3 favorites for lunch</a><br>
-<a href="#Top 3 Snacks2">Top 3 Snacks</a><br>
-<a href="#Top 3 Favorites for dinner2">Top 3 Favorites for dinner</a><br>
+</div>
 
-<h2 id="Top 3 Favorites for breakfast2">Top 3 Favorites for breakfast.</h2>
-<ul style="list-style-type:circle;">
-  <li>Bread and Fried egg</li>
-  <li>Pancake and banana smootie</li>
-  <li>Toast Bread and Tea</li>
-</ul>
-<h2 id="Top 3 favorites for lunch2">Top 3 favorites for lunch.</h2>
-<ul style="list-style-type:disc;">
- <li>Jollof rice and fried chicken</li>
- <li>Beans porridge and Fried plantain</li>
- <li>Pasta and Stewed fish</li>
-</ul>
-<h2 id="Top 3 Snacks2">Top 3 Snacks.</h2>
- <ol type ="i">
-  <li>Meat pie</li>
-  <li>Popcorn</li>
-  <li>Chinchin</li>
-</ol>
-<h2 id="Top 3 Favorites for dinner2">Top 3 Favorites for dinner.</h2>
-<ul style="list-style-type:square;">
-<li>Swallow and vegetable soup</li>
-<li>Lentils porridge and oat meal</li>
-<li>Pap and MoiMoi</li>
-</ul>
-</body>
-</html>
+
+<div id="container2" ondrop="drop(event)" ondragover="allowDrop(event)"</div>
+  </section>
