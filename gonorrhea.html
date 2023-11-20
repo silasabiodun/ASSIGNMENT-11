@@ -9,6 +9,10 @@
 <title>STI</title>
 <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="../css/sti.css">
+<style>
+span{ color:red;}
+</style>
+<script  src="../scripts/validategonorrhea.js"></script>
 </head>
 <body>
   <header>
@@ -33,149 +37,151 @@
   </nav>
   <div id="container1">
       <article class="col-10">
-    <form method ="post" action="" autocomplete="off">
+    <form method ="post" name ="gonorrhea" onsubmit="return validategonorrhea();" action="personalinfo.html" method="POST" autocomplete="off">
     <h2><b>STI case Reporting Form for Chlamydia and Gonorrhea</b></h2>
 <table>
     <h3 style="background-color:grey;">Clinic Information</h3>
   <tr>
     <th>Date:</th>
-    <td><input type="text" name="dateofreport"/></td>
+    <td><input type="date" name="dateofreport" id="dateofreport" onblur="return validatedor"/><span id="dateofreportErr"></span></td>
     <th>Person Completing Form:</th>
-    <td><input type="text" name="nameofreport"/></td>
+    <td><input type="text" name="nameofreport" id="nameofreport" onblur="return validatenor"/><span id="nameofreportErr"></span></td>
   </tr>
   <tr>
     <th>Health Provider:</th>
-    <td><input type="text" name="Health Provider"/></td>
+    <td><input type="text" name="healthprovider" onblur="return validatehp"/><span  id="healthproviderErr"  ></span></td>
     <th>Contact Phone number/fax:</th>
-    <td><input type="text" name="contactof healthprovider"/></td>
+    <td><input type="text" name="contactofhealthprovider" onblur="return validatecontacthp"/><span  id="contactofhealthproviderErr" ></span></td>
   </tr>
   </table>
   <p><i><b>Your lab reported a communicable disease on the patient shown below and listed you as the provider. The Oregon Department of Human Services and Washington County require additional information. The fax cover sheet you have received references Oregon Law (ORS 433) that requires you to report this information. Please complete the form within 24 hours, or by the end of the next working day, and fax it back to our office at 503-846-3644. If you prefer you may call to report the required information. We appreciate your cooperation and prompt handling of this confidential report.</i></b></p>
 <table>
   <h2 style="background-color:grey;">Patient Information - Please complete all information requested below</h2>
-  <tr>
+    <tr>
     <th>1. NAME:</th>
-    <td><input type="text" name="NAME"/></td>
-    <th>DATE OF BIRTH:</th>
-    <td><input type="text" name="DOB"/></td>
-    <th>GENDER:</th>
-    <td><input type="text" name="GENDER"/></td>
-  </tr>
-  <tr>
+    <td><input type="text" name="fullname" id="fullname" onblur="return validatefullname"/><span  id="fullnameErr" ></span></td>
     <th>2. HOME ADDRESS:</th>
     <td><input type="text" name="HOME ADD."/></td>
+    </tr>
+    <tr>
+    <th>DATE OF BIRTH:</th>
+    <td><input type="date" name="dob" id="dob"/><span  id="dobErr" ></span></td>
     <th>PHONE NUMBER:</th>
     <td><input type="text" name="PHONE"/></td>
+    </tr>
+    <tr>
+    <th>GENDER:</th>
+    <td><input type="text" name="gender" id="gender"/><span  id="genderErr" ></span></td>
     <th>ALTERNATIVE#:</th>
     <td><input type="text" name="ALT. NUM."/></td>
-  </tr>
+    </tr>
 </table></br>
 
 <label for"genderidentity"><b>3. PREGNANCY TEST RESULTS:</b></label><br/>
-<input type="radio" value ="N/A" name="pregtestresult" id="N/A" required>
+<input type="radio" value ="N/A" name="pregtestresult" id="N/A" >
 <label for"N/A">N/A</label>
-<input type="radio" value ="Negative" name="pregtestresult" id="Negative" required>
+<input type="radio" value ="Negative" name="pregtestresult" id="Negative" >
 <label for"Negative">Negative</label>
-<input type="radio" value ="unknown" name="pregtestresult" id="unknown" required>
+<input type="radio" value ="unknown" name="pregtestresult" id="unknown" >
 <label for"unknown">Unknown</label>
-<input type="radio" value ="positive" name="pregtestresult" id="positive" required>
+<input type="radio" value ="positive" name="pregtestresult" id="positive" >
 <label for"positive">Positive</label>
 <label for"noofwks">If Positive, How many weeks?</label>
-<input type="text" value ="noofwks" name="pregtestresult" id="noofwks" required><br/></br>
+<input type="text" value ="noofwks" name="pregtestresult" id="noofwks" ><br/></br>
 
     <label for"race"><b>4. ETHNICITY:</b></label><br/>
-    <input type="radio" value ="Hispanic" name="Ethnicity" id="Hispanic" required>
+    <input type="radio" value ="Hispanic" name="ethnicity" id="Hispanic" <span  id="ethnicityErr" ></span>
     <label for"Hispanic">Hispanic</label>
-    <input type="radio" value ="Nonhispanic" name="Ethnicity" id="Nonhispanic" required>
+    <input type="radio" value ="Nonhispanic" name="ethnicity" id="Nonhispanic" >
     <label for"Nonhispanic">Non-Hispanic</label>
-    <input type="radio" value ="unk" name="Ethnicity" id="unk" required>
+    <input type="radio" value ="unk" name="ethnicity" id="unk" >
     <label for"unk">Unk</label></br></br>
-    <label for"race">Race:</label><br/>
-    <input type="radio" value ="American Indian" name="race" id="American Indian" required>
+    <label for"race"><b>RACE:</b></label><br/>
+    <input type="radio" value ="American Indian" name="race" id="American Indian" <span  id="raceErr" ></span>
     <label for"American Indian">American Indian</label>
-    <input type="radio" value ="Alaskan" name="race" id="Alaskan" required>
+    <input type="radio" value ="Alaskan" name="race" id="Alaskan" >
     <label for"Alaskan">Alaskan</label>
-    <input type="radio" value ="asian" name="race" id="asian" required>
+    <input type="radio" value ="asian" name="race" id="asian" >
     <label for"asian">Asian</label>
-    <input type="radio" value ="Pacific Islander" name="race" id="Pacific Islander" required>
+    <input type="radio" value ="Pacific Islander" name="race" id="Pacific Islander" >
     <label for"Pacific Islander">Pacific Islander</label>
-    <input type="radio" value ="Black/African Am." name="race" id="Black/African Am." required>
+    <input type="radio" value ="Black/African Am." name="race" id="Black/African Am." >
     <label for"Black/African Am.">Black/African Am.</label>
-    <input type="radio" value ="white" name="race" id="white" required>
+    <input type="radio" value ="white" name="race" id="white" >
     <label for"white">White</label>
-    <input type="radio" value ="Unk" name="race" id="Unk" required>
+    <input type="radio" value ="Unk" name="race" id="Unk" >
     <label for"Unk">Unk</label>
-    <input type="radio" value ="Other" name="race" id="Other" required>
+    <input type="radio" value ="Other" name="race" id="Other" >
     <label for"Other">Other</label><br/></br>
     <label for"gendersexpartner"><b>GENDER OF SEX PARTNER(S):</b></label><br/>
-    <input type="radio" value ="male" name="gendersexpartner" id="male" required>
+    <input type="radio" value ="male" name="gendersexpartner" id="male" <span  id="gendersexpartnerErr" ></span>
     <label for"male">Male</label>
-    <input type="radio" value ="female" name="gendersexpartner" id="female" required>
+    <input type="radio" value ="female" name="gendersexpartner" id="female" >
     <label for"female">Female</label>
-    <input type="radio" value ="both" name="gendersexpartner" id="both" required>
+    <input type="radio" value ="both" name="gendersexpartner" id="both" >
     <label for"both">Both</label>
-    <input type="radio" value ="unk" name="gendersexpartner" id="unk" required>
+    <input type="radio" value ="unk" name="gendersexpartner" id="unk" >
     <label for"unk">Unk</label></br></br>
 
     <label for"testresulttype"><b>5. TEST RESULT TYPE:</b></label><br/>
-    <input type="radio" value ="Chlamydiapos" name="testresulttype" id="Chlamydiapos" required>
+    <input type="radio" value ="Chlamydiapos" name="testresulttype" id="Chlamydiapos" <span  id="testresulttypeErr" ></span>
     <label for"Chlamydiapos">Chlamydia Positive Result and Date:</label>
-    <input type="date" value ="Chlamydiapos" name="testresulttype" id="Chlamydiapos" required>
-    <input type="radio" value ="Gonorrheapos" name="testresulttype" id="Gonorrheapos" required>
+    <input type="date" value ="Chlamydiapos" name="testresulttype" id="Chlamydiapos" >
+    <input type="radio" value ="Gonorrheapos" name="testresulttype" id="Gonorrheapos" >
     <label for"Gonorrheapos">Gonorrhea Positive Result and Date:</label>
-    <input type="date" value ="Gonorrheapos" name="testresulttype" id="Gonorrheapos" required></br></br>
+    <input type="date" value ="Gonorrheapos" name="testresulttype" id="Gonorrheapos" ></br></br>
     <label for"previoushivtest"><b>PREVIOUS HIV TESTING:</b></label><br/>
-    <input type="radio" value ="yes" name="previoushivtest" id="yes" required>
+    <input type="radio" value ="yes" name="previoushivtest" id="yes" >
     <label for"yes">Yes</label>
-    <input type="radio" value ="no" name="previoushivtest" id="no" required>
+    <input type="radio" value ="no" name="previoushivtest" id="no" >
     <label for"no">No</label>
-    <input type="radio" value ="Unk" name="previoushivtest" id="Unk" required>
+    <input type="radio" value ="Unk" name="previoushivtest" id="Unk" >
     <label for"Unk">Unk</label>
     <label for"ifyes">If yes, last result was?</label>
-    <input type="radio" value ="hivpos" name="ifyes" id="hivpos" required>
+    <input type="radio" value ="hivpos" name="ifyes" id="hivpos" >
     <label for"hivpos">POS</label>
-    <input type="radio" value ="hivneg" name="ifyes" id="hivneg" required>
+    <input type="radio" value ="hivneg" name="ifyes" id="hivneg" >
     <label for"hivneg">NEG</label>
-    <input type="radio" value ="Unk" name="ifyes" id="Unk" required>
+    <input type="radio" value ="Unk" name="ifyes" id="Unk" >
     <label for"Unk">Unk</label></br>
     <label for"rforexam"><b>6. REASON FOR EXAM:</b></label><br/>
-    <input type="radio" value ="symptomatic" name="rforexam" id="symptomatic" required>
+    <input type="radio" value ="symptomatic" name="rforexam" id="symptomatic" <span  id="rforexamErr" ></span>
     <label for"symptomatic">Symptomatic</label>
-    <input type="radio" value ="routineexam" name="rforexam" id="routineexam" required>
+    <input type="radio" value ="routineexam" name="rforexam" id="routineexam" >
     <label for"routineexam">Routine Exam</label>
-    <input type="radio" value ="testforcure" name="rforexam" id="testforcure" required>
+    <input type="radio" value ="testforcure" name="rforexam" id="testforcure" >
     <label for"testforcure">Test for Cure</label>
-    <input type="radio" value ="exposedtoinfection" name="rforexam" id="exposedtoinfection" required>
+    <input type="radio" value ="exposedtoinfection" name="rforexam" id="exposedtoinfection" >
     <label for"exposedtoinfection">Exposed to Infection</label>
-    <input type="radio" value ="pregnant" name="rforexam" id="pregnant" required>
+    <input type="radio" value ="pregnant" name="rforexam" id="pregnant" >
     <label for"pregnant">Pregnant</label></br></br>
     <label for"diagnosis"><b>DIAGNOSIS:</b></label><br/>
-    <input type="radio" value ="Asymptomatic" name="diagnosis" id="Asymptomatic" required>
+    <input type="radio" value ="Asymptomatic" name="diagnosis" id="Asymptomatic" <span  id="diagnosisErr" ></span>
     <label for"Asymptomatic">Asymptomatic</label>
-    <input type="radio" value ="symptomaticuncomplicated" name="diagnosis" id="symptomaticuncomplicated" required>
+    <input type="radio" value ="symptomaticuncomplicated" name="diagnosis" id="symptomaticuncomplicated" >
     <label for"symptomaticuncomplicated">Symptomatic-Uncomplicated</label>
-    <input type="radio" value ="pid" name="diagnosis" id="pid" required>
+    <input type="radio" value ="pid" name="diagnosis" id="pid" >
     <label for"pid">Pelvic Inflammatory Disease(PID)</label>
-    <input type="radio" value ="ophthalmia/conjunctivitis" name="diagnosis" id="ophthalmia/conjunctivitis" required>
+    <input type="radio" value ="ophthalmia/conjunctivitis" name="diagnosis" id="ophthalmia/conjunctivitis" >
     <label for"opththalmia/conjuctivitis">Opththalmia/Conjunctivitis</label>
-    <input type="radio" value ="Disseminated" name="diagnosis" id="Disseminated" required>
+    <input type="radio" value ="Disseminated" name="diagnosis" id="Disseminated" >
     <label for"Disseminated">Disseminated</label></br></br>
     <label for"sites"><b>SITES:</b></label><br/>
-    <input type="radio" value ="cervix" name="sites" id="cervix" required>
+    <input type="radio" value ="cervix" name="sites" id="cervix" <span  id="sitesErr" ></span>
     <label for"cervix">Cervix</label>
-    <input type="radio" value ="vaginal" name="sites" id="vaginal" required>
+    <input type="radio" value ="vaginal" name="sites" id="vaginal" >
     <label for"vaginal">Symptomatic-Vaginal</label>
-    <input type="radio" value ="urethra" name="sites" id="urethra" required>
+    <input type="radio" value ="urethra" name="sites" id="urethra" >
     <label for"urethra">Urethra</label>
-    <input type="radio" value ="rectum" name="sites" id="rectum" required>
+    <input type="radio" value ="rectum" name="sites" id="rectum" >
     <label for"rectum">Rectum</label>
-    <input type="radio" value ="ocular" name="sites" id="ocular" required>
+    <input type="radio" value ="ocular" name="sites" id="ocular" >
     <label for"ocular">Ocular</label>
-    <input type="radio" value ="urine" name="sites" id="urine" required>
+    <input type="radio" value ="urine" name="sites" id="urine" >
     <label for"urine">Urine</label>
-    <input type="radio" value ="pharynx" name="sites" id="pharynx" required>
+    <input type="radio" value ="pharynx" name="sites" id="pharynx" >
     <label for"pharynx">Pharynx</label>
-    <input type="radio" value ="other" name="sites" id="other" required>
+    <input type="radio" value ="other" name="sites" id="other" >
     <label for"other">Other</label></br></br>
 <table>
     <tr>
@@ -223,6 +229,8 @@
   <h4>CURRENT RECOMMENDED TREATMENT- See CDC Guidelines at: http:www.cdc.gov/std/treatment</h4>
 </div>
 </table>
+<input type="submit" value="Submit"/>
+
     </form>
   </article>
   </section>
